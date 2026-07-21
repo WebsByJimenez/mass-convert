@@ -28,7 +28,6 @@
 
 ---
 
-## 🚀 Instalación y Uso Local
 
 👤 Autor
 Desarrollado por WebsByJimenez
