@@ -28,6 +28,9 @@
 
 ---
 
+## 🚀 Instalación y Uso Local
+
+No requiere instalación de dependencias ni servidores externos.
 
 👤 Autor
 Desarrollado por WebsByJimenez
