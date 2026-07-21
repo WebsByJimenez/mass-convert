@@ -1,0 +1,13 @@
+# Archivos del sistema operativo (Mac / Windows)
+.DS_Store
+Thumbs.db
+ehthumbs.db
+
+# Configuración de editores (VS Code, WebStorm)
+.vscode/
+.idea/
+
+# Archivos de registro y temporales
+*.log
+*.tmp
+

@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Conversor de peso instantáneo y bidireccional. Transforma unidades de masa fácilmente con MassConvert." />
+    <title>MassConvert | Conversor de Peso Profesional</title>
+    <link rel="icon" type="image/png" href="./img/bascula.png" />
+    <link rel="stylesheet" href="./css/estilos.css" />
+  </head>
+  <body>
+    <main class="main-content">
+      <div class="card-container">
+        <header class="card-header">
+          <div class="logo-icon">MC</div>
+          <h1 class="card-title">MassConvert</h1>
+        </header>
+
+        <!-- Se utiliza <div> en lugar de <section> para cumplir con los estándares W3C sin requerir h2-h6 -->
+        <div class="converter-section">
+          <!-- Selector de Modo de Conversión -->
+          <div class="input-group">
+            <label for="unit-select" class="input-label">Tipo de Conversión</label>
+            <select id="unit-select" class="input-field select-field">
+              <option value="kg-lbs">Kilogramos (kg) ➔ Libras (lbs)</option>
+              <option value="lbs-kg">Libras (lbs) ➔ Kilogramos (kg)</option>
+              <option value="g-oz">Gramos (g) ➔ Onzas (oz)</option>
+              <option value="oz-g">Onzas (oz) ➔ Gramos (g)</option>
+            </select>
+          </div>
+
+          <!-- Input de entrada -->
+          <div class="input-group">
+            <label for="input" id="input-label" class="input-label">Valor en Kilogramos (kg)</label>
+            <input
+              type="number"
+              id="input"
+              class="input-field"
+              step="any"
+              min="0"
+              placeholder="0.00"
+              autocomplete="off" />
+          </div>
+
+          <!-- Pantalla de Resultado + Botón Copiar -->
+          <div class="result-display">
+            <div class="result-data">
+              <span class="result-value" id="result">0.00</span>
+              <span class="result-unit" id="unit-label">lbs (Libras)</span>
+            </div>
+            <button
+              id="copy-btn"
+              class="copy-btn"
+              title="Copiar al portapapeles"
+              aria-label="Copiar resultado">
+              📋
+            </button>
+          </div>
+
+          <p class="error-message hidden" id="error" aria-live="polite"></p>
+        </div>
+      </div>
+    </main>
+
+    <script src="./js/index.js"></script>
+  </body>
+</html>
